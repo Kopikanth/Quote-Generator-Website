@@ -15,6 +15,82 @@ body{
 
 .container{
     background: #fff;
-    padding: 50px;
+    padding: 60px;
     border-radius: 10px;
+    height: 370px;
+    width: 680px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    /* display: flex; */
+    text-align: center;
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    /* position: relative; */
+}
+
+.container h1{
+    font-size: 35px;
+    display: inline-block;
+    position: relative;
+    margin-top: -140px;
+}
+
+.container h1::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 30%;
+    transform: translateX(-50%);
+    background: #1775af;
+    left: 50%;
+    bottom: -10px;
+}
+
+p.quote{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p.author{
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: -430px;
+    /* position: absolute; */
+    /* right: 50px; */
+    /* bottom: 110px; */
+}
+
+p.author span{
+    color: #1775af;
+}
+
+.buttons button{
+    height: 50px;
+    width: 140px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 20px;
+    /* position: relative; */
+    /* bottom: 50px; */
+    /* transform: translateX(-50%); */
+}
+
+.newQuote-button{
+    background-color: #3974e2;
+    color: white;
+    margin-right: 3px;
+    border: none;
+}
+
+.tweet-button{
+    border: 1px solid #24a0ec;
+    background: none;
+    margin-left: 3px;
+}
+
+.tweet-button i{
+    color: #24a0ec;
+    font-size: 20px;
 }
